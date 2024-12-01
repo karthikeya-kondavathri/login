@@ -1,11 +1,18 @@
 import React from 'react';
 import DubaiImg from '../images/dubaiLogo.png';
 import CompImg from '../images/compLogo.png';
+import { useNavigate } from 'react-router-dom';
 
 
 //import Login from '../components/Login';
 
 const SalesLogin = () => {
+    const navigate = useNavigate();
+
+    const handleLogin = (event) => {
+      event.preventDefault();
+      navigate('/salesdashboard');
+    };
   return(
     <>
        <div class="grid mainLoginWrapper">
@@ -14,7 +21,7 @@ const SalesLogin = () => {
             <img class="compLogo" src={ CompImg } alt=" Company Logo"/>
         </div>
         <div class="gridCmpltCenter loginRS"> 
-            <form class="loginForm gridCmpltCenterCol" name="loginForm" action="">
+            <form class="loginForm gridCmpltCenterCol" name="loginForm" action="" onSubmit={handleLogin}>
                 <h1 class="loginTitle">Sales Log In</h1>
                 <div class="gridCmpltCenterCol">
                     <input class="ip" name="" id="" placeholder="User Name" />

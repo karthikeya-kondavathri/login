@@ -1,8 +1,15 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import DubaiImg from '../images/dubaiLogo.png';
 import CompImg from '../images/compLogo.png';
 
 const AgentLogin = () => {
+    const navigate = useNavigate();
+
+  const handleLogin = (event) => {
+    event.preventDefault();
+    navigate('/agentdashboard');
+  };
   return(
     <>
 
@@ -12,7 +19,7 @@ const AgentLogin = () => {
             <img class="compLogo" src= { CompImg } alt=" Company Logo"/>
         </div>
         <div class="gridCmpltCenter loginRS"> 
-            <form class="loginForm gridCmpltCenterCol" name="loginForm" action="">
+            <form class="loginForm gridCmpltCenterCol" name="loginForm" action="" onSubmit={handleLogin}>
                 <h1 class="loginTitle">Agent Log In</h1>
                 <div class="gridCmpltCenterCol">
                     <input class="ip" name="" id="" placeholder="Agency Name" />
@@ -22,7 +29,7 @@ const AgentLogin = () => {
                         <a href="forgetpassword.html">Forgot Password?</a>
                     </div>
                     <div class="loginBtnWrapper">
-                        <input class="primaryBtns loginBtn" type="submit" name="" value="Login" name="" id="" />
+                        <input class="primaryBtns loginBtn" type="submit" name="" value="Login" id="" />
                     </div>
                 </div>
             </form>
