@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from  'react-router-dom';
 import DubaiImg from '../images/dubaiLogo.png';
 import CompImg from '../images/compLogo.png';
 
@@ -27,7 +28,9 @@ const AdminLogin = () => {
                         <a href="forgetpassword.html">Forgot Password?</a>
                     </div>
                     <div class="loginBtnWrapper">
-                        <input class="primaryBtns loginBtn" type="submit" name="" value="Login" name="" id="" />
+                    <Link>
+                        <input class="primaryBtns loginBtn" type="submit" name="" value="Login" id="" />
+                    </Link>
                     </div>
                 </div>
             </form>

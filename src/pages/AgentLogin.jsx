@@ -22,7 +22,7 @@ const AgentLogin = () => {
                         <a href="forgetpassword.html">Forgot Password?</a>
                     </div>
                     <div class="loginBtnWrapper">
-                        <input class="primaryBtns loginBtn" type="submit" name="" value="Login" name="" id="" />
+                        <input class="primaryBtns loginBtn" type="submit" name="" value="Login"  id="" />
                     </div>
                 </div>
             </form>
