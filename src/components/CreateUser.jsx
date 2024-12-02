@@ -3,9 +3,8 @@ import React from 'react'
 function CreateUser() {
   return (
     <>
-    <h1>CU</h1>
     <div className="popup" id="createuser" >
-    <a href="#" class="close">×</a>
+    <a href="#" className="close">×</a>
     <h2>Create User</h2>
     <form className="gridCmpltCenterCol" name="loginForm" action="">
         <div className="gridCmpltCenterCol">
@@ -16,7 +15,7 @@ function CreateUser() {
         </div>
     </form>
     </div> 
-    <a href="#" class="close-popup"></a>
+    <a href="#" className="close-popup"></a>
     </>
   )
 }
