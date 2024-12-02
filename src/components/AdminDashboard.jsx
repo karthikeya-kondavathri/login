@@ -1,5 +1,5 @@
 import React from 'react';
-import Comp1Img from '../images/compLogo1.png';
+import CompImg from '../images/compLogo.png';
 import Navigation from './Navigation';
 import Cards from './Cards';
 import SalesTable  from './SalesTable';

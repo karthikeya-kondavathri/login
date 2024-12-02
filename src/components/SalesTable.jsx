@@ -3,13 +3,11 @@ import React from 'react'
 function SalesTable() {
   return (
     <div>
-        <h1>SalesTable</h1>
-        {/*
-        <!--  Sales Table start -->
-    <div class="regstrationFormWrapper"  style="overflow-x: auto;">
-        <h1 class="pageTitle">Sales Data </h1>
-        <table class="primaryTable">
-            <tr>
+      <div className="regstrationFormWrapper">
+        <h1 className="pageTitle">Sales Data </h1>
+        <table className="primaryTable">
+          <tbody>
+          <tr>
               <th scope="col">Full Name </th>
               <th scope="col">Salary / Incentive</th>
               <th scope="col">Date of Joining</th>
@@ -49,12 +47,12 @@ function SalesTable() {
               <td data-label="Incentives">18</td>
               <td data-label="Salary Withdrawn">50000</td>
             </tr>
+          </tbody>
+            
         </table>
-    </div>
-    <!--  Sales Table end -->
-         */}
+      </div>
     </div>
   )
 }
 
-export default SalesTable
+export default SalesTable;

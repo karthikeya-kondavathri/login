@@ -1,5 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
+import { Link } from  'react-router-dom';
 import DubaiImg from '../images/dubaiLogo.png';
 import CompImg from '../images/compLogo.png';
 
